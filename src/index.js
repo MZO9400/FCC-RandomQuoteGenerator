@@ -6,14 +6,17 @@ import "./index.css";
 const Quote = props => {
   return (
     <div>
-      <p>{props.data}</p>
+      <p>
+        <i class="fa fa-quote-left" /> {props.data}{" "}
+        <i class="fa fa-quote-right" />
+      </p>
     </div>
   );
 };
 const Author = props => {
   return (
     <div>
-      <p>- {props.data}</p>
+      <p>~ {props.data}</p>
     </div>
   );
 };
