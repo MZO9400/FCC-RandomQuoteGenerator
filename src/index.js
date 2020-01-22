@@ -26,7 +26,7 @@ class QuoteBox extends React.Component {
       quoteauthor: this.props.quoteauthor
     };
     this.getQuotes();
-    setInterval(this.newQuote, 5000);
+    setInterval(this.newQuote, 10000);
     this.newQuote = this.newQuote.bind(this);
   }
   quotes = [];
