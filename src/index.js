@@ -26,6 +26,7 @@ class QuoteBox extends React.Component {
       quoteauthor: this.props.quoteauthor
     };
     this.getQuotes();
+    setInterval(this.newQuote, 5000);
     this.newQuote = this.newQuote.bind(this);
   }
   quotes = [];
@@ -63,7 +64,6 @@ class QuoteBox extends React.Component {
     });
   };
   render() {
-    setTimeout(this.newQuote, 5000);
     return (
       <div>
         <div id="text">
