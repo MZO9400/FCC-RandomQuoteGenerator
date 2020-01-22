@@ -50,7 +50,7 @@ class QuoteBox extends React.Component {
     return colorHex;
   };
   newQuote = () => {
-    let rQuoteNum = Math.floor(Math.random() * 10000) % this.quotes.length;
+    let rQuoteNum = Math.floor(Math.random() * this.quotes.length);
     let quote = this.quotes[rQuoteNum].quote;
     let quoteauthor = this.quotes[rQuoteNum].author;
     document.body.style.backgroundColor = this.makeColor();

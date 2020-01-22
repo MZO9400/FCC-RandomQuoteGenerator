@@ -1,8 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:400, 500);
 body {
-  font-family: Calibri;
-  background-color: red;
-  color: red;
 }
 #quote-box {
   position: fixed;
@@ -20,6 +16,9 @@ body {
   font-size: 1.5em;
 }
 #author {
+  font-family: sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
   text-align: right;
   font-size: 1.2em;
 }
