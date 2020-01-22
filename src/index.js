@@ -7,7 +7,10 @@ const Quote = props => {
   return (
     <div>
       <p>
-        <i class="fa fa-quote-left" /> {props.data}{" "}
+        <i class="fa fa-quote-left" />
+        &emsp;
+        {props.data}
+        &emsp;
         <i class="fa fa-quote-right" />
       </p>
     </div>
