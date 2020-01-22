@@ -81,9 +81,6 @@ class QuoteBox extends React.Component {
             <i className="fa fa-refresh"></i>
           </button>
         </div>
-        <a id="tweet-quote" href="https://twitter.com/intent/tweet">
-          <i className="fa fa-twitter"></i>
-        </a>
       </div>
     );
   }

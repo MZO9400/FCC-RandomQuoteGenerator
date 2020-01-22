@@ -23,13 +23,11 @@ body {
   text-align: right;
   font-size: 1.2em;
 }
-#tweet-quote {
-  right: 2em;
-  bottom: 1.5em;
-  position: absolute;
-}
 #new-quote {
+  width: 100%;
   position: absolute;
-  bottom: 0.9em;
-  right: 4em;
+  bottom: 0px;
+  left: 0px;
+  border: none;
+  border-radius: 0px;
 }
