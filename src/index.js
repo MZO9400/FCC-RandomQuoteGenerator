@@ -42,22 +42,21 @@ class QuoteBox extends React.Component {
     let colors = "0123456789ABCDEF";
     let colorHex = "#";
     while (colorHex.length < 7) {
-      let color = Math.floor(Math.random() * colors.length);
-      if (isText) {
-        color = (color % 9) + 7;
-      }
+      let color = (Math.floor(Math.random() * colors.length) % 9) + 7;
       colorHex += colors[color];
     }
     return colorHex;
   };
+
   newQuote = () => {
     let rQuoteNum = Math.floor(Math.random() * this.quotes.length);
     let quote = this.quotes[rQuoteNum].quote;
     let quoteauthor = this.quotes[rQuoteNum].author;
-    document.body.style.backgroundColor = this.makeColor();
-    document.body.style.color = this.makeColor(true);
-    $("#new-quote").css("background-color", this.makeColor());
-    $("#new-quote").css("color", this.makeColor(true));
+    let color = this.makeColor();
+    document.body.style.backgroundColor = color;
+    document.body.style.color = color;
+    $("#new-quote").css("background-color", color);
+    $("#new-quote").css("color", "black");
     this.setState({
       quote,
       quoteauthor
@@ -73,11 +72,7 @@ class QuoteBox extends React.Component {
           <Author data={this.state.quoteauthor} />
         </div>
         <div id="new-quote-div">
-          <button
-            id="new-quote"
-            className="btn btn-info"
-            onClick={this.newQuote}
-          >
+          <button id="new-quote" className="btn" onClick={this.newQuote}>
             <i className="fa fa-refresh"></i>
           </button>
         </div>
