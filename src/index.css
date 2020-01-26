@@ -1,5 +1,16 @@
 body {
 }
+@keyframes fade {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
 #quote-box {
   border-radius: 1em;
   position: fixed;
@@ -14,6 +25,7 @@ body {
   padding: 6em;
   outline: 20px;
   box-shadow: -1em 1em 0.2em 0.5em rgba(0, 0, 0, 0.2);
+  animation: 3s infinite fade;
 }
 #text {
   text-align: justify;
@@ -38,4 +50,26 @@ body {
 .btn:active {
   outline: none !important;
   box-shadow: none;
+}
+@media (max-device-width: 500px) {
+  #quote-box {
+    min-width: 80%;
+    height: 80%;
+  }
+  #text {
+    font-size: 5em;
+  }
+  #author {
+    font-size: 4em;
+  }
+  #new-quote {
+    height: 8em;
+    width: 8em;
+    left: 45%;
+    border-radius: 100%;
+  }
+  #new-quote i {
+    box-sizing: border-box;
+    font-size: 5em;
+  }
 }

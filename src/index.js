@@ -1,17 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import $ from "jquery";
+import Axios from "axios";
 import "./index.css";
 
 const Quote = props => {
   return (
     <div>
       <p>
-        <i class="fa fa-quote-left" />
+        <i className="fa fa-quote-left" />
         &emsp;
         {props.data}
         &emsp;
-        <i class="fa fa-quote-right" />
+        <i className="fa fa-quote-right" />
       </p>
     </div>
   );
@@ -37,12 +38,12 @@ class QuoteBox extends React.Component {
   }
   quotes = [];
   getQuotes = () => {
-    $.getJSON(
-      "https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json",
-      data => {
-        this.quotes = data.quotes;
-      }
-    );
+    Axios.get(
+      "https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json"
+    ).then(response => {
+      this.quotes = response.data.quotes;
+      return response;
+    });
   };
   makeColor = (isText = false) => {
     let colors = "0123456789ABCDEF";
