@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/FCC-RandomQuoteGenerator/static/css/main.b06d4a43.chunk.css",
+    "main.css": "/FCC-RandomQuoteGenerator/static/css/main.24ad03b3.chunk.css",
     "main.js": "/FCC-RandomQuoteGenerator/static/js/main.df3d2213.chunk.js",
     "main.js.map": "/FCC-RandomQuoteGenerator/static/js/main.df3d2213.chunk.js.map",
     "runtime-main.js": "/FCC-RandomQuoteGenerator/static/js/runtime-main.278dad5a.js",
@@ -8,15 +8,15 @@
     "static/js/2.5ebbefee.chunk.js": "/FCC-RandomQuoteGenerator/static/js/2.5ebbefee.chunk.js",
     "static/js/2.5ebbefee.chunk.js.map": "/FCC-RandomQuoteGenerator/static/js/2.5ebbefee.chunk.js.map",
     "index.html": "/FCC-RandomQuoteGenerator/index.html",
-    "precache-manifest.c24c9f4e7b267a6a91a7ca22f1e1c352.js": "/FCC-RandomQuoteGenerator/precache-manifest.c24c9f4e7b267a6a91a7ca22f1e1c352.js",
+    "precache-manifest.14d939725ff96c139454a9d14738f04e.js": "/FCC-RandomQuoteGenerator/precache-manifest.14d939725ff96c139454a9d14738f04e.js",
     "service-worker.js": "/FCC-RandomQuoteGenerator/service-worker.js",
-    "static/css/main.b06d4a43.chunk.css.map": "/FCC-RandomQuoteGenerator/static/css/main.b06d4a43.chunk.css.map",
+    "static/css/main.24ad03b3.chunk.css.map": "/FCC-RandomQuoteGenerator/static/css/main.24ad03b3.chunk.css.map",
     "static/js/2.5ebbefee.chunk.js.LICENSE": "/FCC-RandomQuoteGenerator/static/js/2.5ebbefee.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.278dad5a.js",
     "static/js/2.5ebbefee.chunk.js",
-    "static/css/main.b06d4a43.chunk.css",
+    "static/css/main.24ad03b3.chunk.css",
     "static/js/main.df3d2213.chunk.js"
   ]
 }
