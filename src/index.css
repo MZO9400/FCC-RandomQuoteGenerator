@@ -1,16 +1,5 @@
 body {
 }
-@keyframes fade {
-  0% {
-    opacity: 100%;
-  }
-  50% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
 #quote-box {
   border-radius: 1em;
   position: fixed;
@@ -25,7 +14,6 @@ body {
   padding: 6em;
   outline: 20px;
   box-shadow: -1em 1em 0.2em 0.5em rgba(0, 0, 0, 0.2);
-  animation: 3s infinite fade;
 }
 #text {
   text-align: justify;
